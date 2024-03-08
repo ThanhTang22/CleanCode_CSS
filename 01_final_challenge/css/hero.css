@@ -1,0 +1,44 @@
+@import url(../style.css);
+
+.main-hero{
+    background-color: var(--clr-bright-gray);
+}
+.hero-row{
+    padding-block: 10rem;
+}
+
+.hero__text-title > span{
+    color: var(--clr-donkey-brow);
+}
+
+.main-hero__descript > p{
+    padding-block: 5rem 3rem;
+
+}
+.main-hero__descript > button{
+    font-size: var(--fs-600);
+    text-transform: uppercase;
+    font-weight: var(--fw-bold);
+
+}
+
+
+.btn-hero__descript{
+    padding: 1rem 2rem;
+}
+
+@media (min-width:1000px){
+    .hero-row{
+        display: flex;
+        align-items: flex-end;
+    }
+    .main-hero__text{
+        width: 60%;
+        /* border: 1px solid; */
+    }
+    .main-hero__descript{
+        width: 40%;
+        /* border: 1px solid; */
+
+    }
+}
