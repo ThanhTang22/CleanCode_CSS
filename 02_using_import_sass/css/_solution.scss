@@ -1,0 +1,29 @@
+
+
+.main-solution{
+    background-color: var(--clr-neutral-300);
+    color: var(--clr-neutral-700);
+}
+
+.main-solution__problem{
+    padding-block: 5rem;
+}
+
+.solution__problem-content{
+    text-align: center;
+}
+.solution__problem-content > h3{
+    font-size: var(--fs-700);
+    color: var(--clr-donkey-brow);
+}
+.solution__problem-content > p{
+    padding-block: 1rem 2rem;
+}
+
+@media (min-width:1000px) {
+    .main-solution__row{
+        display: flex;
+        column-gap: 5rem;
+        flex: 1 1 300px;
+    }
+}

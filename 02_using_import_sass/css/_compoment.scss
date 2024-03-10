@@ -1,0 +1,25 @@
+
+/** compoment style  */
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-inline: 2rem;
+
+    position: relative;
+    // border: 1px solid red;
+}
+
+@media (min-width:768px) {
+    .container{
+        padding-inline: 5rem;
+    }
+}
+
+.btn{
+    /* display: inline-block; */
+    background-color: var(--clr-donkey-brow);
+    border: none;
+    border-radius: 100px;
+}
