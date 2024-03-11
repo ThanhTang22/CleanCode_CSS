@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>first coding of SASS</title>
+    <!-- font Oswald , Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
+    <!-- css connect sass-->
+    <link rel="stylesheet" href="./02_using_sass.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container header-row">
+            <div class="header-logo">
+                <a href="#">
+                    <img src="../01_final_challenge/asset/logo.svg" alt="home logo">
+                </a>
+            </div>
+
+            <nav class="header-nav nav-hidden">
+                <ul class="nav-list">
+                    <div class="nav-list__primary">
+                        <li class="nav-link">
+                            <a href="#">Home</a>
+                        </li>
+                        <li class="nav-link">
+                            <a href="#">About</a>
+                        </li>
+                        <li class="nav-link">
+                            <a href="#">Contact</a>
+                        </li>
+                    </div>
+                    <div class="nav-list__secondary">
+                        <li class="nav-link">
+                            <a href="#">Sign in</a>
+                        </li>
+                        <li class="nav-link btn-sign__up">
+                            <a href="#">Sign up</a>
+                        </li>
+                    </div>
+                </ul>
+            </nav>
+
+            <button class="nav-toggle">
+                <span class="hamburger"></span>
+            </button>
+            <script src="./nav-toggle.js"></script>
+        </div>
+    </header>
+
+    <main>
+
+        <div class="main-hero">
+            <div class="container hero-row">
+                <div class="main-hero__text">
+                    <h1 class="hero__text-title">Responsive layouts <span>don't have to be a struggle</span></h1>
+                </div>
+                <div class="main-hero__descript">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil suscipit tempore est voluptatibus. Exercitationem minus rem, cum possimus, laborum pariatur incidunt voluptatem accusantium harum culpa id? Praesentium beatae recusandae labore?</p>
+                    <button class="btn btn-hero__descript">I want to learn</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-solution">
+            <div class="container">
+                <div class="main-solution__problem main-solution__row">
+                    <div class="solution__problem-content">
+                        <h3>Mobile-first</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, error? Error laudantium soluta inventore cum nostrum eum nemo optio culpa, aspernatur itaque dolores, dignissimos vitae recusandae ut iste, perspiciatis omnis.</p>
+                    </div>
+                    <div class="solution__problem-content">
+                        <h3>Efficient</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, error? Error laudantium soluta inventore cum nostrum eum nemo optio culpa, aspernatur itaque dolores, dignissimos vitae recusandae ut iste, perspiciatis omnis.</p>
+                    </div>
+                    <div class="solution__problem-content">
+                        <h3>Done right</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, error? Error laudantium soluta inventore cum nostrum eum nemo optio culpa, aspernatur itaque dolores, dignissimos vitae recusandae ut iste, perspiciatis omnis.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-about">
+            <div class="container main-about__row">
+                <div class="main-about__content">
+                    <h4>It donesn't have to be so hard</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus commodi culpa beatae suscipit tempora, repellat neque libero temporibus vel reprehenderit, deserunt voluptas ipsa quae. Consectetur labore perferendis eveniet deserunt voluptatum, aperiam odio harum, officia unde possimus delectus blanditiis sit! Voluptatibus.</p>
+                    <div class="about__content-img">
+                        <img src="../01_final_challenge/asset/hero-img.jpg" alt="image content">
+                    </div>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam recusandae fugiat, illum qui molestias molestiae dolorum veniam? Totam, magnam architecto ipsam aut accusamus voluptate mollitia, deserunt, quae quis quas quo quod voluptas. Incidunt dolores dignissimos in consequatur ducimus! Vero, at.</p>
+                </div>
+                <aside class="main-about__sidebar">
+                    <div class="about__sidebar-text">
+                        <h4>Break it down</h4>
+                        <p>Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius, similique?</p>
+                    </div>
+                    <div class="about__sidebar-text">
+                        <h4>Break it down</h4>
+                        <p>Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius, similique?</p>
+                    </div>
+                    <div class="about__sidebar-text">
+                        <h4>Break it down</h4>
+                        <p>Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius, similique?</p>
+                    </div>
+                    
+                </aside>
+            </div>
+        </div>
+
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-title">
+                <h2>just scratching the surface</h2>
+            </div>
+            <div class="footer-author footer-author__row">
+                <div class="footer-author__about">
+                    <h5>About our company</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed consequatur aut tempore vitae quibusdam quaerat, alias nemo quos rem qui placeat beatae sapiente reiciendis repudiandae amet incidunt! Ab, cumque sapiente.</p>
+                </div>
+                <div class="footer-author__connect">
+                    <ul class="author__connect-list">
+                        <h5>Getting around</h5>
+                        <li class="author__connect-link">
+                            <a href="#">Home</a>
+                        </li>
+                        <li class="author__connect-link">
+                            <a href="#">About</a>
+                        </li>
+                        <li class="author__connect-link">
+                            <a href="#">Contact</a>
+                        </li>
+                    </ul>
+                    <ul class="author__connect-list">
+                        <h5>Other things</h5>
+                        <li class="author__connect-link">
+                            <a href="#">Lorem, ipsum</a>
+                        </li>
+                        <li class="author__connect-link">
+                            <a href="#">dolor</a>
+                        </li>
+                        <li class="author__connect-link">
+                            <a href="#">sit amet</a>
+                        </li>
+                        <li class="author__connect-link">
+                            <a href="#">consectetur</a>
+                        </li>
+                    </ul>
+                    <ul class="author__connect-list">
+                        <h5>Other things</h5>
+                        <li class="author__connect-link">
+                            <a href="#">Lorem, ipsum</a>
+                        </li>
+                        <li class="author__connect-link">
+                            <a href="#">dolor</a>
+                        </li>
+                        <li class="author__connect-link">
+                            <a href="#">sit amet</a>
+                        </li>
+                        <li class="author__connect-link">
+                            <a href="#">consectetur</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

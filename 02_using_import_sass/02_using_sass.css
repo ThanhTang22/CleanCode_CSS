@@ -1,0 +1,412 @@
+.header {
+  background-color: #2E323F;
+}
+
+.header-logo {
+  display: inline-block;
+  padding: 1rem 3rem 1rem 0;
+  /* border: 1px solid green; */
+}
+.header-logo:hover, .header-logo:active {
+  cursor: pointer;
+}
+
+/** navigation */
+.nav-link a {
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  display: block;
+  padding: 1rem 2rem;
+}
+.nav-link a:hover,
+.nav-link a:focus {
+  cursor: pointer;
+  background-color: #a59678;
+}
+
+.btn-sign__up {
+  background-color: #fff;
+}
+.btn-sign__up a {
+  color: #000;
+}
+
+/** nav-toggle   */
+.nav-toggle {
+  background-color: #a59678;
+  width: 3rem;
+  min-width: 3rem;
+  height: 3rem;
+  border: none;
+  position: absolute;
+  right: 2rem;
+  top: 0.5rem;
+  /* border: 10px solid green; */
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+  width: 50%;
+  height: 3px;
+  background-color: #fff;
+  display: block;
+  margin: 0 auto;
+}
+
+.hamburger::before,
+.hamburger::after {
+  content: "";
+  width: 100%;
+}
+
+.hamburger::before {
+  transform: translateY(-8px);
+}
+
+.hamburger::after {
+  transform: translateY(5px);
+}
+
+.nav-hidden {
+  visibility: hidden;
+  height: 0;
+  position: absolute;
+}
+
+.nav-visible {
+  visibility: visible;
+  height: auto;
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .nav-toggle {
+    position: absolute;
+    right: 5rem;
+  }
+}
+@media (min-width: 1000px) {
+  .header-row {
+    display: flex;
+  }
+  .header-nav {
+    width: 100%;
+  }
+  .nav-list {
+    display: flex;
+    justify-content: space-between;
+  }
+  .nav-list__primary,
+  .nav-list__secondary {
+    display: flex;
+  }
+  .nav-toggle {
+    visibility: hidden;
+    height: 0;
+    position: absolute;
+  }
+  .nav-hidden {
+    visibility: visible;
+    height: auto;
+    position: relative;
+  }
+}
+.main-hero {
+  background-color: #3b4050;
+}
+
+.hero-row {
+  padding-block: 10rem;
+}
+
+.hero__text-title > span {
+  color: #a59678;
+}
+
+.main-hero__descript > p {
+  padding-block: 5rem 3rem;
+}
+
+.main-hero__descript > button {
+  font-size: 1.75rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.btn-hero__descript {
+  padding: 1rem 2rem;
+}
+
+@media (min-width: 1000px) {
+  .hero-row {
+    display: flex;
+    align-items: flex-end;
+  }
+  .main-hero__text {
+    width: 60%;
+    /* border: 1px solid; */
+  }
+  .main-hero__descript {
+    width: 40%;
+    /* border: 1px solid; */
+  }
+}
+.main-solution {
+  background-color: #eee;
+  color: #000;
+}
+
+.main-solution__problem {
+  padding-block: 5rem;
+}
+
+.solution__problem-content {
+  text-align: center;
+}
+
+.solution__problem-content > h3 {
+  font-size: 2.25rem;
+  color: #a59678;
+}
+
+.solution__problem-content > p {
+  padding-block: 1rem 2rem;
+}
+
+@media (min-width: 1000px) {
+  .main-solution__row {
+    display: flex;
+    column-gap: 5rem;
+    flex: 1 1 300px;
+  }
+}
+.main-about {
+  background-color: #fff;
+  color: #000;
+}
+
+.main-about__content {
+  margin-block: 10rem;
+}
+
+.main-about__content > h4,
+.about__sidebar-text > h4 {
+  color: #a59678;
+}
+
+.main-about__content > p {
+  margin-block: 2rem;
+}
+
+.about__content-img > img {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .main-about__row {
+    display: flex;
+    column-gap: 5rem;
+  }
+}
+/* sidebar */
+.main-about__sidebar {
+  text-align: center;
+  margin-block: 10rem;
+}
+
+.about__sidebar-text {
+  background-color: #2E323F;
+  color: #fff;
+  min-width: 200px;
+  height: auto;
+  margin-bottom: 2rem;
+}
+
+.about__sidebar-text > p {
+  padding: 0 2rem 3rem;
+}
+
+.about__sidebar-text > h4 {
+  padding: 1rem;
+}
+
+.footer {
+  background-color: #2E323F;
+}
+
+.footer-title {
+  padding-block: 5rem;
+  text-align: center;
+}
+
+.footer-author__about > h5 {
+  padding-bottom: 1rem;
+  color: #a59678;
+}
+
+.footer-author__about {
+  padding-bottom: 5rem;
+}
+
+.author__connect-list {
+  padding-bottom: 4rem;
+}
+
+.author__connect-list > h5 {
+  padding-bottom: 0.5rem;
+  color: #a59678;
+}
+
+.author__connect-list > li {
+  padding-block: 0.5rem;
+}
+
+@media (min-width: 1000px) {
+  .footer-author__row {
+    display: flex;
+    padding-bottom: 5rem;
+  }
+  .footer-author__about {
+    max-width: 500px;
+    margin-right: 5rem;
+    /* border: 1px solid; */
+  }
+  .footer-author__connect {
+    /* border: 1px solid; */
+    display: flex;
+    column-gap: 2rem;
+    flex: 1 1 400px;
+  }
+}
+/** compoment style  */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-inline: 2rem;
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding-inline: 5rem;
+  }
+}
+.btn {
+  /* display: inline-block; */
+  background-color: #a59678;
+  border: none;
+  border-radius: 100px;
+}
+
+:root {
+  /* primary */
+  /* neutral */
+  /* font family */
+  /* font size */
+  /* font weight */
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  color-scheme: dark;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 300;
+  color: #fff;
+  line-height: 1.5;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+ul {
+  list-style-type: none;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: "Oswald", sans-serif;
+}
+
+h1 {
+  font-size: 5.625rem;
+}
+
+h2 {
+  font-size: 3.35rem;
+}
+
+h3 {
+  font-size: 2.25rem;
+}
+
+h4 {
+  font-size: 1.75rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+@media (max-width: 560px) {
+  body {
+    font-size: 0.875rem;
+  }
+  h5 {
+    font-size: 1.125rem;
+  }
+  h4 {
+    font-size: 1.25rem;
+  }
+  h3 {
+    font-size: 1.75rem;
+  }
+  h2 {
+    font-size: 2.25rem;
+  }
+  h1 {
+    font-size: 3.35rem;
+  }
+}
+@media (max-width: 350px) {
+  body {
+    font-size: 0.625rem;
+  }
+  h5 {
+    font-size: 1.125rem;
+  }
+  h4 {
+    font-size: 1.25rem;
+  }
+  h3 {
+    font-size: 1.25rem;
+  }
+  h2 {
+    font-size: 1.75rem;
+  }
+  h1 {
+    font-size: 2.25rem;
+  }
+}
+
+/*# sourceMappingURL=02_using_sass.css.map */

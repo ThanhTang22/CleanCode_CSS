@@ -1,0 +1,62 @@
+@import './theme_sass/variables';
+
+
+.main-about{
+    background-color: $clr-neutral-100;
+    color: $clr-neutral-700;
+}
+
+.main-about__content{
+    margin-block: 10rem;
+
+}
+
+
+.main-about__content > h4,
+.about__sidebar-text > h4{
+    color: $clr-donkey-brow;
+}
+
+.main-about__content > p{
+    margin-block: 2rem;
+}
+
+.about__content-img > img{
+    width: 100%;
+
+}
+
+@media (min-width:768px) {
+    .main-about__row{
+        display: flex;
+        column-gap: 5rem;
+    }
+}
+
+
+/* sidebar */
+
+.main-about__sidebar{
+
+    text-align: center;
+    margin-block: 10rem;
+
+}
+.about__sidebar-text{
+    background-color: $clr-charade;
+    color: $clr-neutral-100;
+
+    min-width: 200px;
+    height: auto;
+
+
+    margin-bottom: 2rem;
+
+}
+
+.about__sidebar-text > p {
+    padding: 0 2rem 3rem;
+}
+.about__sidebar-text > h4 {
+    padding: 1rem;
+}
