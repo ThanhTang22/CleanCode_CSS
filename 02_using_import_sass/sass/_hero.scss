@@ -1,13 +1,14 @@
+@import './theme_sass/variables';
 
 .main-hero{
-    background-color: var(--clr-bright-gray);
+    background-color: $clr-bright-gray;
 }
 .hero-row{
     padding-block: 10rem;
 }
 
 .hero__text-title > span{
-    color: var(--clr-donkey-brow);
+    color: $clr-donkey-brow;
 }
 
 .main-hero__descript > p{
@@ -15,9 +16,9 @@
 
 }
 .main-hero__descript > button{
-    font-size: var(--fs-600);
+    font-size: $fs-600;
     text-transform: uppercase;
-    font-weight: var(--fw-bold);
+    font-weight: $fw-bold;
 
 }
 

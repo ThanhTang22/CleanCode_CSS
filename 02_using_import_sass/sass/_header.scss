@@ -1,49 +1,61 @@
+@import './theme_sass/variables';
 
 .header{
-    background-color: var(--clr-charade);
+    background-color: $clr-charade;
 }
 
 .header-logo{
     display: inline-block;
     padding: 1rem 3rem 1rem 0;
     /* border: 1px solid green; */
+    &:hover,
+    &:active{
+        cursor: pointer;
+    }
 }
-.header-logo:hover,
-.header-logo:active{
-    cursor: pointer;
-}
+// .header-logo:hover,
+// .header-logo:active{
+//     cursor: pointer;
+// }
 
 
 /** navigation */
-/* .nav-list{
-    border: 1px solid green;
-} */
 
-.nav-link > a{
-    font-weight: var(--fw-bold);
-    text-transform: uppercase;
-    text-align: center;
+.nav-link{
+    a {
+        font-weight: $fw-bold;
+        text-transform: uppercase;
+        text-align: center;
 
-    display: block;
-    padding: 1rem 2rem;
+        display: block;
+        padding: 1rem 2rem;
+    }
+    a:hover,
+    a:focus{
+        cursor: pointer;
+        background-color: $clr-donkey-brow;
+    }
 }
-.nav-link>a:hover,
-.nav-link>a:focus{
-    cursor: pointer;
-    background-color: var(--clr-donkey-brow);
-}
+// .nav-link>a:hover,
+// .nav-link>a:focus{
+//     cursor: pointer;
+//     background-color: $clr-donkey-brow);
+// }
 
 
 .btn-sign__up{
-    background-color:var(--clr-neutral-100);
+    background-color: $clr-neutral-100;
+    a{
+        color: $clr-neutral-700;
+    }
 }
-.btn-sign__up > a{
-    color: var(--clr-neutral-700);
-}
+// .btn-sign__up > a{
+//     color: $clr-neutral-700);
+// }
 
 /** nav-toggle   */
 .nav-toggle{
-    background-color: var(--clr-donkey-brow);
+    background-color: $clr-donkey-brow;
     width: 3rem;
     min-width: 3rem;
     height: 3rem;
@@ -61,7 +73,7 @@
 .hamburger::after{
     width: 50%;
     height: 3px;   
-    background-color: var(--clr-neutral-100);
+    background-color: $clr-neutral-100;
     
     display: block;
     margin: 0 auto;
